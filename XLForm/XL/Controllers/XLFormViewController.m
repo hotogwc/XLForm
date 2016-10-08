@@ -616,8 +616,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     XLFormRowDescriptor * rowDescriptor = [self.form formRowAtIndex:indexPath];
-    [self updateFormRow:rowDescriptor];
-    return [rowDescriptor cellForFormController:self];
+
+    return [self updateFormRow:rowDescriptor];
 }
 
 
